@@ -1,8 +1,11 @@
+git version
+
 git config --global user.email ronalambrosio@uni.pe
 git config --global user.name Ronal Ambrosio
 
 git status
 git log
 
-git add
+git add .
+git checkout
 git commit
