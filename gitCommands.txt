@@ -14,4 +14,5 @@ git add .
 git checkout
 git commit
 
-git pull master
+git push origin master
+git pull origin master
