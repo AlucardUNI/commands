@@ -1,0 +1,11 @@
+###########################################################################
+# Comandos Python
+###########################################################################
+
+# Listar packages de python outdated
+pip3 list --outdated --format=freeze
+
+# Actualizar packages de python
+pip3 list -o --format columns|  cut -d' ' -f1|xargs -n1 pip install -U
+pip-review --local --interactive
+pip3 list --outdated

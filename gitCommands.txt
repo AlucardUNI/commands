@@ -1,3 +1,7 @@
+###########################################################################
+# Comandos Git
+###########################################################################
+
 git version
 
 git config --global user.email ronalambrosio@uni.pe
@@ -9,3 +13,5 @@ git log
 git add .
 git checkout
 git commit
+
+git pull master

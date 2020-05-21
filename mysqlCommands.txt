@@ -1,0 +1,44 @@
+###########################################################################
+# Comandos MySQL
+###########################################################################
+
+# ver politica de password
+SHOW VARIABLES LIKE 'validate_password%';
+
+# Cambiar politica de password
+SET GLOBAL validate_password_policy=LOW;
+
+# cambiar password
+use mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '[password]';
+
+# Ingresar con root
+mysql -u root -h localhost -p
+
+# Crear nuevo user
+CREATE USER '[username]'@'[localhost]' IDENTIFIED BY '[password]';
+
+# Dar privilegios a un user
+GRANT [type_of_permission] ON [database_name].[table_name] TO '[username]'@'[localhost]';
+// type_of_permission = ALL PRIVILEGES
+
+# Quitar privilegios a un user
+REVOKE [type_of_permission] ON [database_name].[table_name] FROM ‘[username]’@‘[localhost]’;
+
+# Crear una base de datos
+CREATE DATABASE [database_name];
+
+# Cambiar a una base de datos
+USE [database_name];
+
+# Crear una tabla
+CREATE TABLE [table_name](
+   [column_name] [column_type],
+   [column_name] [column_type] [column_type],
+   PRIMARY KEY ( [column_name] )
+);
+
+# Describir table
+DESC [table_name];
+
+
